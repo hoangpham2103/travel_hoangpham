@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel in Viet Nam </title>
+  <link rel="stylesheet" type="text/css" href="tab_header.css">
+</head>
+<body>
+  <button class="tablink" onclick="openPage('Home', this, 'red')"id="defaultOpen">Sapa</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" >Fasipan</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Hà Giang</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">Tràng An</button>
+
+<div id="Home" class="tabcontent">
+ <link rel="stylesheet" type="text/css" href="slideshow.css">
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 10</div>
+      <img src="Sapa/anh1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 10</div>
+      <img src="Sapa/anh2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 10</div>
+      <img src="Sapa/anh3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 10</div>
+      <img src="Sapa/anh4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 10</div>
+      <img src="Sapa/anh5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 10</div>
+      <img src="Sapa/anh6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 10</div>
+      <img src="Sapa/anh7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 10</div>
+      <img src="Sapa/anh8.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 10</div>
+      <img src="Sapa/anh9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">10 / 10</div>
+      <img src="Sapa/anh10.jpg" style="width:100%">
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+    <span class="dot" onclick="currentSlide(8)"></span> 
+    <span class="dot" onclick="currentSlide(9)"></span> 
+    <span class="dot" onclick="currentSlide(10)"></span> 
+  </div>
+  <script type="text/javascript" src="slideshow.js"></script>
+</div>
+
+<div id="News" class="tabcontent">
+  <link rel="stylesheet" type="text/css" href="fansipan.css">
+  <h2 style="text-align:center">Hành trình leo núi</h2>
+
+  <div class="row">
+    <div class="column">
+      <img src="fansipan/anh1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="fansipan/anh2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="fansipan/anh3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+    <div class="column">
+      <img src="fansipan/anh4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img_nature_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img_snow_wide.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img_mountains_wide.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img_lights_wide.jpg" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column">
+        <img class="demo cursor" src="img_nature_wide.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="img_snow_wide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="img_mountains_wide.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+
+      <div class="column">
+        <img class="demo cursor" src="img_lights_wide.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="fansipan/anh1.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="fansipan/anh2.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="fansipan/anh3.jpg" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="fansipan/anh4.jpg" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+
+      <div class="column">
+        <img class="demo cursor" src="fansipan/anh1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="fansipan/anh2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="fansipan/anh3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="fansipan/anh4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="fansipan.js"></script>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <link rel="stylesheet" type="text/css" href="hagiang.css">
+  <!-- Header -->
+  <div class="header">
+    <h1>Cực Bắc của tổ quốc</h1>
+    <p>Việt Nam tươi đẹp!</p>
+  </div>
+
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="hagiang/anh1.jpg" style="width:100%">
+      <img src="hagiang/anh2.jpg" style="width:100%">
+      <img src="hagiang/anh3.jpg" style="width:100%">
+      <img src="hagiang/anh4.jpg" style="width:100%">
+      <img src="hagiang/anh5.jpg" style="width:100%">
+      <img src="hagiang/anh6.jpg" style="width:100%">
+      <img src="hagiang/anh7.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="hagiang/anh8.jpg" style="width:100%">
+      <img src="hagiang/anh9.jpg" style="width:100%">
+      <img src="hagiang/anh10.jpg" style="width:100%">
+      <img src="hagiang/anh11.jpg" style="width:100%">
+      <img src="hagiang/anh12.jpg" style="width:100%">
+      <img src="hagiang/anh13.jpg" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="hagiang/anh14.jpg" style="width:100%">
+      <img src="hagiang/anh15.jpg" style="width:100%">
+      <img src="hagiang/anh16.jpg" style="width:100%">
+      <img src="hagiang/anh17.jpg" style="width:100%">
+      <img src="hagiang/anh18.jpg" style="width:100%">
+      <img src="hagiang/anh19.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="hagiang/anh20.jpg" style="width:100%">
+      <img src="hagiang/anh21.jpg" style="width:100%">
+      <img src="hagiang/anh22.jpg" style="width:100%">
+      <img src="hagiang/anh23.jpg" style="width:100%">
+      <img src="hagiang/anh24.jpg" style="width:100%">
+      <img src="hagiang/anh25.jpg" style="width:100%">
+    </div>
+    </div>
+</div>
+
+<div id="About" class="tabcontent">
+ <link rel="stylesheet" type="text/css" href="slideshow.css">
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 10</div>
+      <img src="trangan/anh1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 10</div>
+      <img src="trangan/anh2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 10</div>
+      <img src="trangan/anh3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 10</div>
+      <img src="trangan/anh4.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 10</div>
+      <img src="trangan/anh5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 10</div>
+      <img src="trangan/anh6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 10</div>
+      <img src="trangan/anh7.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 10</div>
+      <img src="trangan/anh8.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">9 / 10</div>
+      <img src="trangan/anh9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">10 / 10</div>
+      <img src="trangan/anh10.jpg" style="width:100%">
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+    <span class="dot" onclick="currentSlide(8)"></span> 
+    <span class="dot" onclick="currentSlide(9)"></span> 
+    <span class="dot" onclick="currentSlide(10)"></span> 
+  </div>
+  <script type="text/javascript" src="slideshow.js"></script>
+</div>
+<script type="text/javascript" src="tab_header.js"></script>
+</body>
+</html>
