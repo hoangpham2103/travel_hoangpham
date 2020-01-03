@@ -1,6 +1,6 @@
 * {box-sizing: border-box}
 .Home {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
+.slides {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -11,7 +11,7 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prevTran, .nextTran {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -27,13 +27,13 @@ img {vertical-align: middle;}
 }
 
 /* Position the "next button" to the right */
-.next {
+.nextTran {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prevTran:hover, .nextTran:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -58,7 +58,7 @@ img {vertical-align: middle;}
 }
 
 /* The dots/bullets/indicators */
-.dot {
+.cham {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -69,29 +69,29 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active, .cham:hover {
   background-color: #717171;
 }
 
 /* Fading animation */
-.fade {
+.fades {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fades {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
-@keyframes fade {
+@keyframes fades {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prevTran, .nextTran,.text {font-size: 11px}
 }
